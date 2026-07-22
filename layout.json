@@ -3,37 +3,37 @@
     "services": {
       "background": "#ffffff",
       "top":    "6rem",
-      "right":  "0",
       "bottom": "6rem",
-      "left":   "0"
+      "left":   "0",
+      "right":  "0"
     },
     "gallery": {
-      "background": "#999999",
+      "background": "#cccccc",
       "top":    "6rem",
-      "right":  "0",
-      "bottom": "0",
-      "left":   "0"
+      "bottom": "6rem",
+      "left":   "0",
+      "right":  "0"
     },
     "about": {
       "background": "#ffffff",
       "top":    "6rem",
-      "right":  "0",
       "bottom": "6rem",
-      "left":   "0"
+      "left":   "0",
+      "right":  "0"
     },
     "contact": {
-      "background": "#333333",
+      "background": "#666666",
       "top":    "6rem",
-      "right":  "0",
       "bottom": "6rem",
-      "left":   "0"
+      "left":   "0",
+      "right":  "0"
     },
     "footer": {
       "background": "#000000",
       "top":    "3rem",
-      "right":  "0",
       "bottom": "3rem",
-      "left":   "0"
+      "left":   "0",
+      "right":  "0"
     }
   }
 }
