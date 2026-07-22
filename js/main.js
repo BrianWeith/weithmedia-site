@@ -177,6 +177,28 @@ function populatePage(c, layout) {
   // ── Footer ──
   set('[data-c="footer-copy"]', c.footer.copyright);
 
+  // ── Typography ──
+  if (layout && layout.typography) {
+    const t = layout.typography;
+    const root = document.documentElement;
+
+    // Inject Google Fonts link
+    if (t.googleFonts) {
+      const link = document.createElement('link');
+      link.rel  = 'stylesheet';
+      link.href = t.googleFonts;
+      document.head.appendChild(link);
+    }
+
+    const levels = ['h1', 'h2', 'h3', 'body', 'eyebrow', 'nav', 'buttons'];
+    levels.forEach(level => {
+      if (t[level]) {
+        if (t[level].family) root.style.setProperty(`--font-${level}`,   t[level].family);
+        if (t[level].weight) root.style.setProperty(`--weight-${level}`, t[level].weight);
+      }
+    });
+  }
+
   // ── Layout: background colors and spacing ──
   if (layout && layout.sections) {
     const selectorMap = {

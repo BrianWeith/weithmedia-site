@@ -10,6 +10,22 @@
 }
 
 :root {
+  /* Typography — overridden at runtime from layout.json */
+  --font-h1:      'Inter', sans-serif;
+  --font-h2:      'Inter', sans-serif;
+  --font-h3:      'Inter', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-eyebrow: 'Inter', sans-serif;
+  --font-nav:     'Inter', sans-serif;
+  --font-buttons: 'Inter', sans-serif;
+  --weight-h1:      300;
+  --weight-h2:      300;
+  --weight-h3:      700;
+  --weight-body:    400;
+  --weight-eyebrow: 600;
+  --weight-nav:     500;
+  --weight-buttons: 700;
+
   --nav-h: 72px;
   --black: #111111;
   --white: #ffffff;
@@ -29,7 +45,8 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
   color: var(--black);
   background: var(--white);
   line-height: 1.6;
@@ -63,15 +80,17 @@ ul {
 
 /* ── SECTION HEADINGS ── */
 h2 {
+  font-family: var(--font-h2);
   font-size: clamp(1.75rem, 3vw, 2.5rem);
-  font-weight: 300;
+  font-weight: var(--weight-h2);
   letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
 }
 
 h3 {
+  font-family: var(--font-h3);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: var(--weight-h3);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -101,8 +120,9 @@ h3 {
   padding: 0.875rem 2.25rem;
   background: var(--white);
   color: var(--black);
+  font-family: var(--font-buttons);
   font-size: 0.8125rem;
-  font-weight: 700;
+  font-weight: var(--weight-buttons);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: background 0.2s;
@@ -116,8 +136,9 @@ h3 {
   padding: 0.875rem 2.25rem;
   background: var(--black);
   color: var(--white);
+  font-family: var(--font-buttons);
   font-size: 0.8125rem;
-  font-weight: 700;
+  font-weight: var(--weight-buttons);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: background 0.2s;
@@ -167,8 +188,9 @@ h3 {
 }
 
 .nav-links a {
+  font-family: var(--font-nav);
   font-size: 0.8125rem;
-  font-weight: 500;
+  font-weight: var(--weight-nav);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gray-600);
@@ -248,8 +270,9 @@ h3 {
 }
 
 .hero-eyebrow {
+  font-family: var(--font-eyebrow);
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: var(--weight-eyebrow);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.65);
@@ -257,8 +280,9 @@ h3 {
 }
 
 .hero-content h1 {
+  font-family: var(--font-h1);
   font-size: clamp(2.25rem, 5.5vw, 4rem);
-  font-weight: 300;
+  font-weight: var(--weight-h1);
   letter-spacing: -0.025em;
   line-height: 1.08;
   margin-bottom: 1.5rem;
