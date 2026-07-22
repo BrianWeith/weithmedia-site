@@ -3,3 +3,10 @@ compatibility_date = "2026-07-22"
 
 [assets]
 directory = "./"
+
+# Dev preview environment — deploys to weithmedia-site-dev.brian-weith.workers.dev
+[env.dev]
+name = "weithmedia-site-dev"
+
+[env.dev.assets]
+directory = "./"
