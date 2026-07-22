@@ -3,7 +3,7 @@
     "eyebrow": "Professional Real Estate Media",
     "heading": "Photography & Video<br>That Sells Listings",
     "subheading": "Stunning, professionally edited photos and video that make your listing stand out and attract more buyers.",
-    "cta": "Book a Shoot"
+    "cta": "Book a Session"
   },
 
   "services": {
@@ -54,7 +54,7 @@
 
   "gallery": {
     "heading": "Recent Work",
-    "subheading": "A sample of recent shoots.",
+    "subheading": "A sample of recent sessions.",
     "images": [
       "gallery/Condo-01.jpg",
       "gallery/Exterior-01.jpg",
@@ -83,14 +83,14 @@
     "heading": "About Your Photographer",
     "paragraphs": [
       "I'm a professional real estate photographer and videographer helping agents, brokers, and homeowners create compelling visual content that gets listings noticed and sold.",
-      "With a background in professional photography, I bring both technical precision and a trained artistic eye to every property I shoot — whether it's a starter condo or a luxury home.",
+      "With a background in professional photography, I bring both technical precision and a trained artistic eye to every property I visit — whether it's a starter condo or a luxury home.",
       "Fast turnaround, transparent pricing, and easy to work with. That's my promise."
     ],
     "cta": "Get in Touch"
   },
 
   "contact": {
-    "heading": "Book Your Shoot",
+    "heading": "Book a Session",
     "subheading": "Ready to make your listing stand out? Reach out by call, text, or email.",
     "methods": [
       {
