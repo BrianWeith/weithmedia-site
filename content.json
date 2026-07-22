@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Professional Real Estate Media",
     "heading": "Photography & Video<br>That Sells Listings",
-    "subheading": "Stunning, professionally edited photos and video that make your property stand out and attract more buyers.",
+    "subheading": "Stunning, professionally edited photos and video that make your listing stand out and attract more buyers.",
     "cta": "Book a Shoot"
   },
 
@@ -29,7 +29,7 @@
       },
       {
         "title": "Floor Plans",
-        "description": "Accurate 2D floor plans that help buyers understand the layout before visiting, reducing wasted showings.",
+        "description": "Accurate 2D floor plans that help buyers understand the layout before they visit, reducing wasted showings.",
         "pricing": [
           { "label": "2D Floor Plan", "price": "$65" }
         ]
@@ -54,7 +54,7 @@
 
   "gallery": {
     "heading": "Recent Work",
-    "subheading": "A sample of our recent shoots.",
+    "subheading": "A sample of recent shoots.",
     "images": [
       "gallery/Condo-01.jpg",
       "gallery/Exterior-01.jpg",
@@ -80,21 +80,31 @@
   },
 
   "about": {
-    "heading": "About Weith Media",
+    "heading": "About Your Photographer",
     "paragraphs": [
-      "Weith Media is a professional real estate photography and video company. We help agents, brokers, and homeowners create compelling visual content that gets listings noticed and sold.",
-      "With a background in professional photography, we bring both technical precision and a trained artistic eye to every property we shoot — whether it's a starter condo or a luxury home.",
-      "Fast turnaround, transparent pricing, and easy to work with. That's the Weith Media promise."
+      "I'm a professional real estate photographer and videographer helping agents, brokers, and homeowners create compelling visual content that gets listings noticed and sold.",
+      "With a background in professional photography, I bring both technical precision and a trained artistic eye to every property I shoot — whether it's a starter condo or a luxury home.",
+      "Fast turnaround, transparent pricing, and easy to work with. That's my promise."
     ],
     "cta": "Get in Touch"
   },
 
   "contact": {
     "heading": "Book Your Shoot",
-    "subheading": "Ready to make your listing stand out? Call or text to get started.",
-    "phone_display": "[YOUR PHONE NUMBER]",
-    "phone_href": "tel:+1XXXXXXXXXX",
-    "note": "We typically respond within a few hours. Online booking coming soon."
+    "subheading": "Ready to make your listing stand out? Reach out by call, text, or email.",
+    "methods": [
+      {
+        "label": "Call or Text",
+        "display": "[YOUR PHONE NUMBER]",
+        "href": "tel:+1XXXXXXXXXX"
+      },
+      {
+        "label": "Email",
+        "display": "[YOUR EMAIL ADDRESS]",
+        "href": "mailto:youremail@example.com"
+      }
+    ],
+    "note": "I typically respond within a few hours. Online booking coming soon."
   },
 
   "footer": {

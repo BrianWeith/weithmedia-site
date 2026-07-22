@@ -46,6 +46,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// ── LIGHTBOX ──
+const lightbox    = document.createElement('div');
+lightbox.id       = 'lightbox';
+lightbox.innerHTML = '<img id="lightbox-img" src="" alt="" /><button id="lightbox-close" aria-label="Close">&times;</button>';
+document.body.appendChild(lightbox);
+
+const lightboxImg = document.getElementById('lightbox-img');
+
+function openLightbox(src) {
+  lightboxImg.src = src;
+  lightbox.classList.add('active');
+  document.body.classList.add('lightbox-open');
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.classList.remove('lightbox-open');
+  lightboxImg.src = '';
+}
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
 // ── CONTENT: load from content.json and populate page ──
 fetch('content.json')
   .then(r => {
@@ -105,8 +133,7 @@ function populatePage(c) {
   // ── Gallery ──
   // To add photos: drop files into images/gallery/ and add the filename to
   // the "images" array in content.json.
-  // To remove photos: delete from the array (and optionally delete the file).
-  // To reorder: rearrange the array.
+  // To remove: delete from the array. To reorder: rearrange the array.
   set('[data-c="gallery-heading"]', c.gallery.heading);
   set('[data-c="gallery-sub"]',     c.gallery.subheading);
 
@@ -115,6 +142,12 @@ function populatePage(c) {
     galleryGrid.innerHTML = c.gallery.images.map(img => `
       <img src="images/${img}" alt="" loading="lazy" />
     `).join('');
+
+    // Attach lightbox click handlers to every gallery image
+    galleryGrid.querySelectorAll('img').forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => openLightbox(img.src));
+    });
   }
 
   // ── About ──
@@ -132,10 +165,14 @@ function populatePage(c) {
   set('[data-c="contact-sub"]',     c.contact.subheading);
   set('[data-c="contact-note"]',    c.contact.note);
 
-  const phone = document.getElementById('contact-phone');
-  if (phone) {
-    phone.textContent = c.contact.phone_display;
-    phone.href        = c.contact.phone_href;
+  const contactMethods = document.getElementById('contact-methods');
+  if (contactMethods) {
+    contactMethods.innerHTML = c.contact.methods.map(method => `
+      <a href="${method.href}" class="contact-method">
+        <span class="contact-method-label">${method.label}</span>
+        <strong class="contact-method-display">${method.display}</strong>
+      </a>
+    `).join('');
   }
 
   // ── Footer ──
