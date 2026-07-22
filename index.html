@@ -36,112 +36,46 @@
     <div class="hero-bg" id="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Professional Real Estate Media</p>
-      <h1>Photography &amp; Video<br>That Sells Listings</h1>
-      <p class="hero-sub">Stunning, professionally edited photos and video that make your property stand out and attract more buyers.</p>
-      <a href="#contact" class="btn-white">Book a Shoot</a>
+      <p class="hero-eyebrow" data-c="hero-eyebrow"></p>
+      <h1 data-c="hero-heading"></h1>
+      <p class="hero-sub" data-c="hero-sub"></p>
+      <a href="#contact" class="btn-white" data-c="hero-cta"></a>
     </div>
   </section>
 
   <!-- ── SERVICES ── -->
   <section id="services">
     <div class="container">
-      <h2>Services &amp; Pricing</h2>
-      <p class="section-sub">Transparent pricing, fast turnaround, professional results.</p>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-          <h3>Photography</h3>
-          <p>Professionally edited HDR photos delivered within 24 hours, covering every room and key exterior angle.</p>
-          <table class="price-table">
-            <tr><td>Under 2,000 sq ft</td><td>$175</td></tr>
-            <tr><td>2,000 – 3,500 sq ft</td><td>$225</td></tr>
-            <tr><td>3,500+ sq ft</td><td>$275</td></tr>
-          </table>
-        </div>
-
-        <div class="service-card">
-          <h3>Video</h3>
-          <p>Smooth, cinematic video that gives buyers a real feel for the space before they ever walk through the door.</p>
-          <table class="price-table">
-            <tr><td>Cinematic Walkthrough (~60–90 sec)</td><td>$250</td></tr>
-            <tr><td>Slideshow Reel</td><td>$125</td></tr>
-          </table>
-        </div>
-
-        <div class="service-card">
-          <h3>Floor Plans</h3>
-          <p>Accurate 2D floor plans that help buyers understand the layout before visiting, reducing wasted showings.</p>
-          <table class="price-table">
-            <tr><td>2D Floor Plan</td><td>$65</td></tr>
-          </table>
-        </div>
-
-        <div class="service-card">
-          <h3>Virtual Staging</h3>
-          <p>Transform empty rooms into photorealistic furnished spaces — a fraction of the cost of physical staging.</p>
-          <table class="price-table">
-            <tr><td>Per staged photo</td><td>$35</td></tr>
-          </table>
-        </div>
-
-      </div>
-
+      <h2 data-c="services-heading"></h2>
+      <p class="section-sub" data-c="services-sub"></p>
+      <div class="services-grid" id="services-grid"></div>
       <div class="addons-block">
-        <h3>Add-Ons &amp; Fees</h3>
-        <div class="addons-list">
-          <div class="addon"><span>Twilight / Dusk Photos</span><span>+$75</span></div>
-          <div class="addon"><span>Rush Turnaround</span><span>+$100</span></div>
-          <div class="addon"><span>Travel beyond 25 miles</span><span>+$50 flat fee</span></div>
-        </div>
+        <h3 data-c="addons-heading"></h3>
+        <div class="addons-list" id="addons-list"></div>
       </div>
-
     </div>
   </section>
 
   <!-- ── GALLERY ── -->
   <section id="gallery">
     <div class="container">
-      <h2>Recent Work</h2>
-      <p class="section-sub">A sample of our recent shoots.</p>
+      <h2 data-c="gallery-heading"></h2>
+      <p class="section-sub" data-c="gallery-sub"></p>
     </div>
-    <div class="gallery-grid">
-      <img src="Photos/Rivershire Condo/Condo-01.jpg" alt="Rivershire Condo interior" loading="lazy" />
-      <img src="Photos/Warsaw House/Exterior-01.jpg" alt="Warsaw House exterior" loading="lazy" />
-      <img src="Photos/Rivershire Condo/Condo-02.jpg" alt="Rivershire Condo" loading="lazy" />
-      <img src="Photos/Warsaw House/Interior-01.jpg" alt="Warsaw House kitchen" loading="lazy" />
-      <img src="Photos/Rivershire Condo/Condo-04.jpg" alt="Rivershire Condo" loading="lazy" />
-      <img src="Photos/Warsaw House/Exterior-02.jpg" alt="Warsaw House exterior" loading="lazy" />
-      <img src="Photos/Warsaw House/Interior-02.jpg" alt="Warsaw House interior" loading="lazy" />
-      <img src="Photos/Rivershire Condo/Condo-05.jpg" alt="Rivershire Condo" loading="lazy" />
-      <img src="Photos/Warsaw House/Interior-03.jpg" alt="Warsaw House interior" loading="lazy" />
-      <img src="Photos/Rivershire Condo/Condo-07.jpg" alt="Rivershire Condo" loading="lazy" />
-      <img src="Photos/Warsaw House/Interior-04.jpg" alt="Warsaw House interior" loading="lazy" />
-      <img src="Photos/Rivershire Condo/Condo-08.jpg" alt="Rivershire Condo" loading="lazy" />
-      <img src="Photos/Warsaw House/Exterior-04.jpg" alt="Warsaw House exterior" loading="lazy" />
-      <img src="Photos/Warsaw House/Interior-05.jpg" alt="Warsaw House interior" loading="lazy" />
-      <img src="Photos/Rivershire Condo/Condo-11.jpg" alt="Rivershire Condo" loading="lazy" />
-      <img src="Photos/Warsaw House/Interior-06.jpg" alt="Warsaw House interior" loading="lazy" />
-      <img src="Photos/Rivershire Condo/Condo-13.jpg" alt="Rivershire Condo" loading="lazy" />
-      <img src="Photos/Warsaw House/Exterior-07.jpg" alt="Warsaw House exterior" loading="lazy" />
-      <img src="Photos/Rivershire Condo/Condo-14.jpg" alt="Rivershire Condo" loading="lazy" />
-      <img src="Photos/Warsaw House/Interior-08.jpg" alt="Warsaw House interior" loading="lazy" />
-    </div>
+    <div class="gallery-grid" id="gallery-grid"></div>
   </section>
 
   <!-- ── ABOUT ── -->
   <section id="about">
     <div class="container about-grid">
       <div class="about-image">
-        <img src="Photos/Rivershire Condo/Condo-15.jpg" alt="Weith Media photography" />
+        <!-- To update: replace images/about.jpg with your new export -->
+        <img id="about-img" src="images/about.jpg" alt="Weith Media photography" />
       </div>
       <div class="about-text">
-        <h2>About Weith Media</h2>
-        <p>Weith Media is a professional real estate photography and video company serving [YOUR SERVICE AREA]. We help agents, brokers, and homeowners create compelling visual content that gets listings noticed and sold.</p>
-        <p>With a background in professional photography, we bring both technical precision and a trained artistic eye to every property we shoot — whether it's a starter condo or a luxury home.</p>
-        <p>Fast turnaround, transparent pricing, and easy to work with. That's the Weith Media promise.</p>
-        <a href="#contact" class="btn-primary">Get in Touch</a>
+        <h2 data-c="about-heading"></h2>
+        <div id="about-paragraphs"></div>
+        <a href="#contact" class="btn-primary" data-c="about-cta"></a>
       </div>
     </div>
   </section>
@@ -149,10 +83,10 @@
   <!-- ── CONTACT ── -->
   <section id="contact">
     <div class="container contact-inner">
-      <h2>Book Your Shoot</h2>
-      <p class="section-sub">Ready to make your listing stand out? Call or text to get started.</p>
-      <a href="tel:+1XXXXXXXXXX" class="contact-phone">[YOUR PHONE NUMBER]</a>
-      <p class="contact-note">We typically respond within a few hours. Online booking coming soon.</p>
+      <h2 data-c="contact-heading"></h2>
+      <p class="section-sub" data-c="contact-sub"></p>
+      <a id="contact-phone" href="#" class="contact-phone"></a>
+      <p class="contact-note" data-c="contact-note"></p>
     </div>
   </section>
 
@@ -160,7 +94,7 @@
   <footer>
     <div class="container footer-inner">
       <img src="Logo/Weith Media - Full Logo.png" alt="Weith Media" class="footer-logo" />
-      <p>&copy; 2026 Weith Media. All rights reserved.</p>
+      <p data-c="footer-copy"></p>
     </div>
   </footer>
 

@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "eyebrow": "Professional Real Estate Media",
+    "heading": "Photography & Video<br>That Sells Listings",
+    "subheading": "Stunning, professionally edited photos and video that make your property stand out and attract more buyers.",
+    "cta": "Book a Shoot"
+  },
+
+  "services": {
+    "heading": "Services & Pricing",
+    "subheading": "Transparent pricing, fast turnaround, professional results.",
+    "cards": [
+      {
+        "title": "Photography",
+        "description": "Professionally edited HDR photos delivered within 24 hours, covering every room and key exterior angle.",
+        "pricing": [
+          { "label": "Under 2,000 sq ft", "price": "$175" },
+          { "label": "2,000 – 3,500 sq ft", "price": "$225" },
+          { "label": "3,500+ sq ft", "price": "$275" }
+        ]
+      },
+      {
+        "title": "Video",
+        "description": "Smooth, cinematic video that gives buyers a real feel for the space before they ever walk through the door.",
+        "pricing": [
+          { "label": "Cinematic Walkthrough (~60–90 sec)", "price": "$250" },
+          { "label": "Slideshow Reel", "price": "$125" }
+        ]
+      },
+      {
+        "title": "Floor Plans",
+        "description": "Accurate 2D floor plans that help buyers understand the layout before visiting, reducing wasted showings.",
+        "pricing": [
+          { "label": "2D Floor Plan", "price": "$65" }
+        ]
+      },
+      {
+        "title": "Virtual Staging",
+        "description": "Transform empty rooms into photorealistic furnished spaces — a fraction of the cost of physical staging.",
+        "pricing": [
+          { "label": "Per staged photo", "price": "$35" }
+        ]
+      }
+    ],
+    "addons": {
+      "heading": "Add-Ons & Fees",
+      "items": [
+        { "label": "Twilight / Dusk Photos", "price": "+$75" },
+        { "label": "Rush Turnaround", "price": "+$100" },
+        { "label": "Travel beyond 25 miles", "price": "+$50 flat fee" }
+      ]
+    }
+  },
+
+  "gallery": {
+    "heading": "Recent Work",
+    "subheading": "A sample of our recent shoots.",
+    "images": [
+      "gallery/Condo-01.jpg",
+      "gallery/Exterior-01.jpg",
+      "gallery/Condo-02.jpg",
+      "gallery/Interior-01.jpg",
+      "gallery/Condo-04.jpg",
+      "gallery/Exterior-02.jpg",
+      "gallery/Interior-02.jpg",
+      "gallery/Condo-05.jpg",
+      "gallery/Interior-03.jpg",
+      "gallery/Condo-07.jpg",
+      "gallery/Interior-04.jpg",
+      "gallery/Condo-08.jpg",
+      "gallery/Exterior-04.jpg",
+      "gallery/Interior-05.jpg",
+      "gallery/Condo-11.jpg",
+      "gallery/Interior-06.jpg",
+      "gallery/Condo-13.jpg",
+      "gallery/Exterior-07.jpg",
+      "gallery/Condo-14.jpg",
+      "gallery/Interior-08.jpg"
+    ]
+  },
+
+  "about": {
+    "heading": "About Weith Media",
+    "paragraphs": [
+      "Weith Media is a professional real estate photography and video company. We help agents, brokers, and homeowners create compelling visual content that gets listings noticed and sold.",
+      "With a background in professional photography, we bring both technical precision and a trained artistic eye to every property we shoot — whether it's a starter condo or a luxury home.",
+      "Fast turnaround, transparent pricing, and easy to work with. That's the Weith Media promise."
+    ],
+    "cta": "Get in Touch"
+  },
+
+  "contact": {
+    "heading": "Book Your Shoot",
+    "subheading": "Ready to make your listing stand out? Call or text to get started.",
+    "phone_display": "[YOUR PHONE NUMBER]",
+    "phone_href": "tel:+1XXXXXXXXXX",
+    "note": "We typically respond within a few hours. Online booking coming soon."
+  },
+
+  "footer": {
+    "copyright": "© 2026 Weith Media. All rights reserved."
+  }
+}
