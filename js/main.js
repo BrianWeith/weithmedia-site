@@ -74,14 +74,13 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLightbox();
 });
 
-// ── CONTENT: load from content.json and populate page ──
-fetch('content.json')
-  .then(r => {
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    return r.json();
-  })
-  .then(c => populatePage(c))
-  .catch(err => console.error('Could not load content.json:', err));
+// ── CONTENT: load from content.json and layout.json, then populate page ──
+Promise.all([
+  fetch('content.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }),
+  fetch('layout.json').then(r  => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+])
+  .then(([c, layout]) => populatePage(c, layout))
+  .catch(err => console.error('Could not load site config:', err));
 
 // Helper: set text or HTML on all matching elements
 function set(selector, value, useHTML = false) {
@@ -91,7 +90,7 @@ function set(selector, value, useHTML = false) {
   });
 }
 
-function populatePage(c) {
+function populatePage(c, layout) {
 
   // ── Hero ──
   // To swap the hero image: replace images/hero.jpg with your Lightroom export (keep the filename)
@@ -177,4 +176,24 @@ function populatePage(c) {
 
   // ── Footer ──
   set('[data-c="footer-copy"]', c.footer.copyright);
+
+  // ── Layout: background colors and spacing ──
+  if (layout && layout.sections) {
+    const selectorMap = {
+      services: '#services',
+      gallery:  '#gallery',
+      about:    '#about',
+      contact:  '#contact',
+      footer:   'footer'
+    };
+    Object.entries(layout.sections).forEach(([key, s]) => {
+      const el = document.querySelector(selectorMap[key]);
+      if (!el) return;
+      if (s.background) el.style.background  = s.background;
+      if (s.top)        el.style.paddingTop    = s.top;
+      if (s.right)      el.style.paddingRight  = s.right;
+      if (s.bottom)     el.style.paddingBottom = s.bottom;
+      if (s.left)       el.style.paddingLeft   = s.left;
+    });
+  }
 }
