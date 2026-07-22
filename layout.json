@@ -1,18 +1,20 @@
 {
   "typography": {
     "googleFonts": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
-    "h1":      { "family": "'Inter', sans-serif", "weight": "300" },
-    "h2":      { "family": "'Inter', sans-serif", "weight": "300" },
-    "h3":      { "family": "'Inter', sans-serif", "weight": "700" },
-    "body":    { "family": "'Inter', sans-serif", "weight": "400" },
-    "eyebrow": { "family": "'Inter', sans-serif", "weight": "600" },
-    "nav":     { "family": "'Inter', sans-serif", "weight": "500" },
-    "buttons": { "family": "'Inter', sans-serif", "weight": "700" }
+    "h1":         { "family": "'Inter', sans-serif", "weight": "300" },
+    "h2":         { "family": "'Inter', sans-serif", "weight": "300" },
+    "h3":         { "family": "'Inter', sans-serif", "weight": "700" },
+    "body":       { "family": "'Inter', sans-serif", "weight": "400" },
+    "subheading": { "family": "'Inter', sans-serif", "weight": "400" },
+    "eyebrow":    { "family": "'Inter', sans-serif", "weight": "600" },
+    "nav":        { "family": "'Inter', sans-serif", "weight": "500" },
+    "buttons":    { "family": "'Inter', sans-serif", "weight": "700" }
   },
 
   "sections": {
     "services": {
       "background": "#ffffff",
+      "color":      "#111111",
       "top":    "6rem",
       "bottom": "6rem",
       "left":   "0",
@@ -20,6 +22,7 @@
     },
     "gallery": {
       "background": "#f5f5f5",
+      "color":      "#111111",
       "top":    "6rem",
       "bottom": "6rem",
       "left":   "0",
@@ -27,6 +30,7 @@
     },
     "about": {
       "background": "#ffffff",
+      "color":      "#111111",
       "top":    "6rem",
       "bottom": "6rem",
       "left":   "0",
@@ -34,6 +38,7 @@
     },
     "contact": {
       "background": "#f5f5f5",
+      "color":      "#111111",
       "top":    "6rem",
       "bottom": "6rem",
       "left":   "0",
@@ -41,6 +46,7 @@
     },
     "footer": {
       "background": "#000000",
+      "color":      "#ffffff",
       "top":    "3rem",
       "bottom": "3rem",
       "left":   "0",

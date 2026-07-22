@@ -190,7 +190,7 @@ function populatePage(c, layout) {
       document.head.appendChild(link);
     }
 
-    const levels = ['h1', 'h2', 'h3', 'body', 'eyebrow', 'nav', 'buttons'];
+    const levels = ['h1', 'h2', 'h3', 'body', 'subheading', 'eyebrow', 'nav', 'buttons'];
     levels.forEach(level => {
       if (t[level]) {
         if (t[level].family) root.style.setProperty(`--font-${level}`,   t[level].family);
@@ -212,6 +212,7 @@ function populatePage(c, layout) {
       const el = document.querySelector(selectorMap[key]);
       if (!el) return;
       if (s.background) el.style.background  = s.background;
+      if (s.color)      el.style.color        = s.color;
       if (s.top)        el.style.paddingTop    = s.top;
       if (s.right)      el.style.paddingRight  = s.right;
       if (s.bottom)     el.style.paddingBottom = s.bottom;
