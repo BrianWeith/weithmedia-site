@@ -95,13 +95,13 @@
     "methods": [
       {
         "label": "Call or Text",
-        "display": "[YOUR PHONE NUMBER]",
-        "href": "tel:+1XXXXXXXXXX"
+        "display": "312-206-1308",
+        "href": "tel:+13122061308"
       },
       {
         "label": "Email",
-        "display": "[YOUR EMAIL ADDRESS]",
-        "href": "mailto:youremail@example.com"
+        "display": "brian.weith@gmail.com",
+        "href": "mailto:brian.weith@gmail.com"
       }
     ],
     "note": "I typically respond within a few hours. Online booking coming soon."
