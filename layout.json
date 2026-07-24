@@ -1,10 +1,10 @@
 {
   "typography": {
 
-    "googleFonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Arimo:wght@400;500;600;700&display=swap"
+    "googleFonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Arimo:wght@400;500;600;700&display=swap",
     "h1":         { "family": "'Oswald', sans-serif", "weight": "300" },
     "h2":         { "family": "'Oswald', sans-serif", "weight": "300" },
-    "h3":         { "family": "'Oswals', sans-serif", "weight": "700" },
+    "h3":         { "family": "'Oswald', sans-serif", "weight": "700" },
     "body":       { "family": "'Arimo', sans-serif", "weight": "400" },
     "subheading": { "family": "'Arimo', sans-serif", "weight": "400" },
     "eyebrow":    { "family": "'Oswald', sans-serif", "weight": "600" },
