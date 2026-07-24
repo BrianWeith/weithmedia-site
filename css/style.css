@@ -469,6 +469,30 @@ h3 {
   color: var(--white);
 }
 
+#lightbox-prev,
+#lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 4rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+  user-select: none;
+}
+
+#lightbox-prev { left: 1rem; }
+#lightbox-next { right: 1rem; }
+
+#lightbox-prev:hover,
+#lightbox-next:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
 /* ─────────────────────────────────────────
    ABOUT
    ───────────────────────────────────────── */

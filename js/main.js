@@ -47,15 +47,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ── LIGHTBOX ──
-const lightbox    = document.createElement('div');
-lightbox.id       = 'lightbox';
-lightbox.innerHTML = '<img id="lightbox-img" src="" alt="" /><button id="lightbox-close" aria-label="Close">&times;</button>';
+const lightbox = document.createElement('div');
+lightbox.id    = 'lightbox';
+lightbox.innerHTML = `
+  <button id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+  <img id="lightbox-img" src="" alt="" />
+  <button id="lightbox-next" aria-label="Next image">&#8250;</button>
+  <button id="lightbox-close" aria-label="Close">&times;</button>
+`;
 document.body.appendChild(lightbox);
 
 const lightboxImg = document.getElementById('lightbox-img');
+let galleryImages = [];
+let lightboxIndex = 0;
 
-function openLightbox(src) {
-  lightboxImg.src = src;
+function openLightbox(index) {
+  lightboxIndex   = index;
+  lightboxImg.src = galleryImages[index];
   lightbox.classList.add('active');
   document.body.classList.add('lightbox-open');
 }
@@ -66,12 +74,22 @@ function closeLightbox() {
   lightboxImg.src = '';
 }
 
+function stepLightbox(dir) {
+  lightboxIndex = (lightboxIndex + dir + galleryImages.length) % galleryImages.length;
+  lightboxImg.src = galleryImages[lightboxIndex];
+}
+
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox) closeLightbox();
 });
 document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-prev').addEventListener('click', (e) => { e.stopPropagation(); stepLightbox(-1); });
+document.getElementById('lightbox-next').addEventListener('click', (e) => { e.stopPropagation(); stepLightbox(1); });
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
+  if (!lightbox.classList.contains('active')) return;
+  if (e.key === 'Escape')     closeLightbox();
+  if (e.key === 'ArrowLeft')  stepLightbox(-1);
+  if (e.key === 'ArrowRight') stepLightbox(1);
 });
 
 // ── CONTENT: load from content.json and layout.json, then populate page ──
@@ -138,14 +156,14 @@ function populatePage(c, layout) {
 
   const galleryGrid = document.getElementById('gallery-grid');
   if (galleryGrid) {
-    galleryGrid.innerHTML = c.gallery.images.map(img => `
-      <img src="images/${img}" alt="" loading="lazy" />
+    galleryImages = c.gallery.images.map(img => `images/${img}`);
+    galleryGrid.innerHTML = galleryImages.map(src => `
+      <img src="${src}" alt="" loading="lazy" />
     `).join('');
 
-    // Attach lightbox click handlers to every gallery image
-    galleryGrid.querySelectorAll('img').forEach(img => {
+    galleryGrid.querySelectorAll('img').forEach((img, i) => {
       img.style.cursor = 'pointer';
-      img.addEventListener('click', () => openLightbox(img.src));
+      img.addEventListener('click', () => openLightbox(i));
     });
   }
 
