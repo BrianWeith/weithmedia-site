@@ -14,16 +14,16 @@
         "title": "Photography",
         "description": "Professionally edited HDR photos delivered within 24 hours, covering every room and key exterior angle.",
         "pricing": [
-          { "label": "Under 2,000 sq ft", "price": "$175" },
+          { "label": "Less than 2,000 sq ft", "price": "$175" },
           { "label": "2,000 – 3,500 sq ft", "price": "$225" },
-          { "label": "3,500+ sq ft", "price": "$275" }
+          { "label": "More than 3,500 sq ft", "price": "$275" }
         ]
       },
       {
         "title": "Video",
         "description": "Smooth, cinematic video that gives buyers a real feel for the space before they ever walk through the door.",
         "pricing": [
-          { "label": "Cinematic Walkthrough (~60–90 sec)", "price": "$250" },
+          { "label": "Cinematic Walkthrough", "price": "$250" },
           { "label": "Slideshow Reel", "price": "$125" }
         ]
       },
@@ -31,14 +31,14 @@
         "title": "Floor Plans",
         "description": "Accurate 2D floor plans that help buyers understand the layout before they visit, reducing wasted showings.",
         "pricing": [
-          { "label": "2D Floor Plan", "price": "$65" }
+          { "label": "2D Floor Plan", "price": "$75" }
         ]
       },
       {
         "title": "Virtual Staging",
-        "description": "Transform empty rooms into photorealistic furnished spaces — a fraction of the cost of physical staging.",
+        "description": "Transform empty rooms into photorealistic furnished spaces for a fraction of the cost of physical staging.",
         "pricing": [
-          { "label": "Per staged photo", "price": "$35" }
+          { "label": "Per staged photo", "price": "$50" }
         ]
       }
     ],
@@ -47,7 +47,7 @@
       "items": [
         { "label": "Twilight / Dusk Photos", "price": "+$75" },
         { "label": "Rush Turnaround", "price": "+$100" },
-        { "label": "Travel beyond 25 miles", "price": "+$50 flat fee" }
+        { "label": "Travel beyond 25 miles", "price": "+$50" }
       ]
     }
   },
@@ -58,6 +58,7 @@
     "images": [
       "gallery/Condo-01.jpg",
       "gallery/Condo-02.jpg",
+      "gallery/Condo-03.jpg",
       "gallery/Condo-04.jpg",
       "gallery/Condo-05.jpg",
       "gallery/Condo-07.jpg",
@@ -65,6 +66,7 @@
       "gallery/Condo-11.jpg",
       "gallery/Condo-13.jpg",
       "gallery/Condo-14.jpg",
+      "gallery/Condo-15.jpg",
       "gallery/Interior-01.jpg",
       "gallery/Interior-02.jpg",
       "gallery/Interior-03.jpg",
@@ -83,7 +85,7 @@
     "heading": "About Your Photographer",
     "paragraphs": [
       "I'm Brian Weith, a professional real estate photographer and videographer helping agents, brokers, and homeowners create compelling visual content that gets listings noticed and sold.",
-      "With a background in professional photography, I bring both technical precision and a trained artistic eye to every property I visit — whether it's a starter condo or a luxury home.",
+      "With a background in professional photography, I bring both technical precision and a trained artistic eye to every property I visit, whether it's a starter condo or a luxury home.",
       "Fast turnaround, transparent pricing, and easy to work with. That's my promise."
     ],
     "cta": "Get in Touch"
