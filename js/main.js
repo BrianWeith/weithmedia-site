@@ -213,6 +213,7 @@ function populatePage(c, layout) {
       if (t[level]) {
         if (t[level].family) root.style.setProperty(`--font-${level}`,   t[level].family);
         if (t[level].weight) root.style.setProperty(`--weight-${level}`, t[level].weight);
+        if (t[level].size)   root.style.setProperty(`--size-${level}`,   t[level].size);
       }
     });
   }
@@ -235,6 +236,22 @@ function populatePage(c, layout) {
       if (s.right)      el.style.paddingRight  = s.right;
       if (s.bottom)     el.style.paddingBottom = s.bottom;
       if (s.left)       el.style.paddingLeft   = s.left;
+
+      // Contact cards
+      if (s.cards) {
+        const c = s.cards;
+        const r = document.documentElement;
+        if (c.background)      r.style.setProperty('--card-background',       c.background);
+        if (c.color)           r.style.setProperty('--card-color',            c.color);
+        if (c.borderColor)     r.style.setProperty('--card-border',           c.borderColor);
+        if (c.hoverBackground) r.style.setProperty('--card-hover-background', c.hoverBackground);
+        if (c.labelFamily)     r.style.setProperty('--card-label-family',     c.labelFamily);
+        if (c.labelWeight)     r.style.setProperty('--card-label-weight',     c.labelWeight);
+        if (c.labelSize)       r.style.setProperty('--card-label-size',       c.labelSize);
+        if (c.displayFamily)   r.style.setProperty('--card-display-family',   c.displayFamily);
+        if (c.displayWeight)   r.style.setProperty('--card-display-weight',   c.displayWeight);
+        if (c.displaySize)     r.style.setProperty('--card-display-size',     c.displaySize);
+      }
     });
   }
 }

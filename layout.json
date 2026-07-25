@@ -2,14 +2,14 @@
   "typography": {
 
     "googleFonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Arimo:wght@400;500;600;700&display=swap",
-    "h1":         { "family": "'Oswald', sans-serif", "weight": "200" },
-    "h2":         { "family": "'Oswald', sans-serif", "weight": "300" },
-    "h3":         { "family": "'Oswald', sans-serif", "weight": "700" },
+    "h1":         { "family": "'Oswald', sans-serif", "weight": "300", "size": "clamp(2.25rem, 6vw, 4rem)" },
+    "h2":         { "family": "'Oswald', sans-serif", "weight": "400", "size": "clamp(1.75rem, 4vw, 2.5rem)" },
+    "h3":         { "family": "'Oswald', sans-serif", "weight": "600", "size": "1rem" },
     "body":       { "family": "'Arimo', sans-serif", "weight": "400" },
     "subheading": { "family": "'Arimo', sans-serif", "weight": "400" },
     "eyebrow":    { "family": "'Oswald', sans-serif", "weight": "600" },
-    "nav":        { "family": "'Arimo', sans-serif", "weight": "500" },
-    "buttons":    { "family": "'Arimo', sans-serif", "weight": "600" }
+    "nav":        { "family": "'Arimo', sans-serif", "weight": "700" },
+    "buttons":    { "family": "'Arimo', sans-serif", "weight": "700" }
   },
 
   "sections": {
@@ -43,7 +43,19 @@
       "top":    "6rem",
       "bottom": "6rem",
       "left":   "0",
-      "right":  "0"
+      "right":  "0",
+      "cards": {
+        "background":      "#111111",
+        "color":           "#ffffff",
+        "borderColor":     "#111111",
+        "hoverBackground": "#374151",
+        "labelFamily":     "'Arimo', sans-serif",
+        "labelWeight":     "600",
+        "labelSize":       "0.75rem",
+        "displayFamily":   "'Arimo', sans-serif",
+        "displayWeight":   "300",
+        "displaySize":     "1.25rem"
+      }
     },
     "footer": {
       "background": "#000000",
